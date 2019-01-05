@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A11B0EAB21E0828E00CF8078 /* LSSEGetUrl.js in Resources */ = {isa = PBXBuildFile; fileRef = A11B0EAA21E0828E00CF8078 /* LSSEGetUrl.js */; };
 		A14F9D3321E081780010731E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F9D3221E081780010731E /* AppDelegate.swift */; };
 		A14F9D3521E081780010731E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F9D3421E081780010731E /* ViewController.swift */; };
 		A14F9D3821E081780010731E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14F9D3621E081780010731E /* Main.storyboard */; };
@@ -14,6 +15,9 @@
 		A14F9D3D21E081790010731E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14F9D3B21E081790010731E /* LaunchScreen.storyboard */; };
 		A14F9D4821E0817A0010731E /* LaarcShareExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F9D4721E0817A0010731E /* LaarcShareExtensionTests.swift */; };
 		A14F9D5321E0817A0010731E /* LaarcShareExtensionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F9D5221E0817A0010731E /* LaarcShareExtensionUITests.swift */; };
+		A14F9D6721E081B60010731E /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F9D6621E081B60010731E /* ShareViewController.swift */; };
+		A14F9D6A21E081B60010731E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14F9D6821E081B60010731E /* MainInterface.storyboard */; };
+		A14F9D6E21E081B60010731E /* LaarcSubmitShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A14F9D6421E081B60010731E /* LaarcSubmitShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +35,33 @@
 			remoteGlobalIDString = A14F9D2E21E081780010731E;
 			remoteInfo = LaarcShareExtension;
 		};
+		A14F9D6C21E081B60010731E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A14F9D2721E081780010731E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A14F9D6321E081B60010731E;
+			remoteInfo = LaarcSubmitShareExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A14F9D7221E081B60010731E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A14F9D6E21E081B60010731E /* LaarcSubmitShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A11B0EAA21E0828E00CF8078 /* LSSEGetUrl.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = LSSEGetUrl.js; sourceTree = "<group>"; };
+		A11B0EB321E096CB00CF8078 /* LaarcSubmitShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaarcSubmitShareExtension.entitlements; sourceTree = "<group>"; };
+		A11B0F0621E0A4E200CF8078 /* LaarcShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaarcShareExtension.entitlements; sourceTree = "<group>"; };
 		A14F9D2F21E081780010731E /* LaarcShareExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaarcShareExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14F9D3221E081780010731E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A14F9D3421E081780010731E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +75,10 @@
 		A14F9D4E21E0817A0010731E /* LaarcShareExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaarcShareExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14F9D5221E0817A0010731E /* LaarcShareExtensionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaarcShareExtensionUITests.swift; sourceTree = "<group>"; };
 		A14F9D5421E0817A0010731E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14F9D6421E081B60010731E /* LaarcSubmitShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LaarcSubmitShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14F9D6621E081B60010731E /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		A14F9D6921E081B60010731E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A14F9D6B21E081B60010731E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A14F9D6121E081B60010731E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +119,7 @@
 				A14F9D3121E081780010731E /* LaarcShareExtension */,
 				A14F9D4621E0817A0010731E /* LaarcShareExtensionTests */,
 				A14F9D5121E0817A0010731E /* LaarcShareExtensionUITests */,
+				A14F9D6521E081B60010731E /* LaarcSubmitShareExtension */,
 				A14F9D3021E081780010731E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +130,7 @@
 				A14F9D2F21E081780010731E /* LaarcShareExtension.app */,
 				A14F9D4321E0817A0010731E /* LaarcShareExtensionTests.xctest */,
 				A14F9D4E21E0817A0010731E /* LaarcShareExtensionUITests.xctest */,
+				A14F9D6421E081B60010731E /* LaarcSubmitShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +138,7 @@
 		A14F9D3121E081780010731E /* LaarcShareExtension */ = {
 			isa = PBXGroup;
 			children = (
+				A11B0F0621E0A4E200CF8078 /* LaarcShareExtension.entitlements */,
 				A14F9D3221E081780010731E /* AppDelegate.swift */,
 				A14F9D3421E081780010731E /* ViewController.swift */,
 				A14F9D3621E081780010731E /* Main.storyboard */,
@@ -125,6 +167,18 @@
 			path = LaarcShareExtensionUITests;
 			sourceTree = "<group>";
 		};
+		A14F9D6521E081B60010731E /* LaarcSubmitShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A11B0EB321E096CB00CF8078 /* LaarcSubmitShareExtension.entitlements */,
+				A14F9D6621E081B60010731E /* ShareViewController.swift */,
+				A14F9D6821E081B60010731E /* MainInterface.storyboard */,
+				A14F9D6B21E081B60010731E /* Info.plist */,
+				A11B0EAA21E0828E00CF8078 /* LSSEGetUrl.js */,
+			);
+			path = LaarcSubmitShareExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +189,12 @@
 				A14F9D2B21E081780010731E /* Sources */,
 				A14F9D2C21E081780010731E /* Frameworks */,
 				A14F9D2D21E081780010731E /* Resources */,
+				A14F9D7221E081B60010731E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A14F9D6D21E081B60010731E /* PBXTargetDependency */,
 			);
 			name = LaarcShareExtension;
 			productName = LaarcShareExtension;
@@ -181,6 +237,23 @@
 			productReference = A14F9D4E21E0817A0010731E /* LaarcShareExtensionUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A14F9D6321E081B60010731E /* LaarcSubmitShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A14F9D6F21E081B60010731E /* Build configuration list for PBXNativeTarget "LaarcSubmitShareExtension" */;
+			buildPhases = (
+				A14F9D6021E081B60010731E /* Sources */,
+				A14F9D6121E081B60010731E /* Frameworks */,
+				A14F9D6221E081B60010731E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaarcSubmitShareExtension;
+			productName = LaarcSubmitShareExtension;
+			productReference = A14F9D6421E081B60010731E /* LaarcSubmitShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,6 +266,11 @@
 				TargetAttributes = {
 					A14F9D2E21E081780010731E = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A14F9D4221E0817A0010731E = {
 						CreatedOnToolsVersion = 10.1;
@@ -201,6 +279,14 @@
 					A14F9D4D21E0817A0010731E = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = A14F9D2E21E081780010731E;
+					};
+					A14F9D6321E081B60010731E = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -220,6 +306,7 @@
 				A14F9D2E21E081780010731E /* LaarcShareExtension */,
 				A14F9D4221E0817A0010731E /* LaarcShareExtensionTests */,
 				A14F9D4D21E0817A0010731E /* LaarcShareExtensionUITests */,
+				A14F9D6321E081B60010731E /* LaarcSubmitShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +333,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14F9D6221E081B60010731E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11B0EAB21E0828E00CF8078 /* LSSEGetUrl.js in Resources */,
+				A14F9D6A21E081B60010731E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +373,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A14F9D6021E081B60010731E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14F9D6721E081B60010731E /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +393,11 @@
 			isa = PBXTargetDependency;
 			target = A14F9D2E21E081780010731E /* LaarcShareExtension */;
 			targetProxy = A14F9D4F21E0817A0010731E /* PBXContainerItemProxy */;
+		};
+		A14F9D6D21E081B60010731E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A14F9D6321E081B60010731E /* LaarcSubmitShareExtension */;
+			targetProxy = A14F9D6C21E081B60010731E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -307,6 +416,14 @@
 				A14F9D3C21E081790010731E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A14F9D6821E081B60010731E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A14F9D6921E081B60010731E /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -431,10 +548,13 @@
 		A14F9D5821E0817A0010731E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LaarcShareExtension/LaarcShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B9452FEMTF;
 				INFOPLIST_FILE = LaarcShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,10 +569,13 @@
 		A14F9D5921E0817A0010731E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LaarcShareExtension/LaarcShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B9452FEMTF;
 				INFOPLIST_FILE = LaarcShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,6 +669,48 @@
 			};
 			name = Release;
 		};
+		A14F9D7021E081B60010731E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LaarcSubmitShareExtension/LaarcSubmitShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9452FEMTF;
+				INFOPLIST_FILE = LaarcSubmitShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilykolar.LaarcShareExtension.LaarcSubmitShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A14F9D7121E081B60010731E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LaarcSubmitShareExtension/LaarcSubmitShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9452FEMTF;
+				INFOPLIST_FILE = LaarcSubmitShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilykolar.LaarcShareExtension.LaarcSubmitShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,6 +746,15 @@
 			buildConfigurations = (
 				A14F9D5E21E0817A0010731E /* Debug */,
 				A14F9D5F21E0817A0010731E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A14F9D6F21E081B60010731E /* Build configuration list for PBXNativeTarget "LaarcSubmitShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14F9D7021E081B60010731E /* Debug */,
+				A14F9D7121E081B60010731E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
