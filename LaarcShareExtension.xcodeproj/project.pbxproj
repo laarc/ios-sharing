@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A14F9D3321E081780010731E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F9D3221E081780010731E /* AppDelegate.swift */; };
+		A14F9D3521E081780010731E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F9D3421E081780010731E /* ViewController.swift */; };
+		A14F9D3821E081780010731E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14F9D3621E081780010731E /* Main.storyboard */; };
+		A14F9D3A21E081790010731E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A14F9D3921E081790010731E /* Assets.xcassets */; };
+		A14F9D3D21E081790010731E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14F9D3B21E081790010731E /* LaunchScreen.storyboard */; };
+		A14F9D4821E0817A0010731E /* LaarcShareExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F9D4721E0817A0010731E /* LaarcShareExtensionTests.swift */; };
+		A14F9D5321E0817A0010731E /* LaarcShareExtensionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14F9D5221E0817A0010731E /* LaarcShareExtensionUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A14F9D4421E0817A0010731E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A14F9D2721E081780010731E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A14F9D2E21E081780010731E;
+			remoteInfo = LaarcShareExtension;
+		};
+		A14F9D4F21E0817A0010731E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A14F9D2721E081780010731E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A14F9D2E21E081780010731E;
+			remoteInfo = LaarcShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A14F9D2F21E081780010731E /* LaarcShareExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaarcShareExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14F9D3221E081780010731E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A14F9D3421E081780010731E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A14F9D3721E081780010731E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A14F9D3921E081790010731E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A14F9D3C21E081790010731E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A14F9D3E21E081790010731E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14F9D4321E0817A0010731E /* LaarcShareExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaarcShareExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14F9D4721E0817A0010731E /* LaarcShareExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaarcShareExtensionTests.swift; sourceTree = "<group>"; };
+		A14F9D4921E0817A0010731E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A14F9D4E21E0817A0010731E /* LaarcShareExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaarcShareExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A14F9D5221E0817A0010731E /* LaarcShareExtensionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaarcShareExtensionUITests.swift; sourceTree = "<group>"; };
+		A14F9D5421E0817A0010731E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A14F9D2C21E081780010731E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14F9D4021E0817A0010731E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14F9D4B21E0817A0010731E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A14F9D2621E081780010731E = {
+			isa = PBXGroup;
+			children = (
+				A14F9D3121E081780010731E /* LaarcShareExtension */,
+				A14F9D4621E0817A0010731E /* LaarcShareExtensionTests */,
+				A14F9D5121E0817A0010731E /* LaarcShareExtensionUITests */,
+				A14F9D3021E081780010731E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A14F9D3021E081780010731E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A14F9D2F21E081780010731E /* LaarcShareExtension.app */,
+				A14F9D4321E0817A0010731E /* LaarcShareExtensionTests.xctest */,
+				A14F9D4E21E0817A0010731E /* LaarcShareExtensionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A14F9D3121E081780010731E /* LaarcShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A14F9D3221E081780010731E /* AppDelegate.swift */,
+				A14F9D3421E081780010731E /* ViewController.swift */,
+				A14F9D3621E081780010731E /* Main.storyboard */,
+				A14F9D3921E081790010731E /* Assets.xcassets */,
+				A14F9D3B21E081790010731E /* LaunchScreen.storyboard */,
+				A14F9D3E21E081790010731E /* Info.plist */,
+			);
+			path = LaarcShareExtension;
+			sourceTree = "<group>";
+		};
+		A14F9D4621E0817A0010731E /* LaarcShareExtensionTests */ = {
+			isa = PBXGroup;
+			children = (
+				A14F9D4721E0817A0010731E /* LaarcShareExtensionTests.swift */,
+				A14F9D4921E0817A0010731E /* Info.plist */,
+			);
+			path = LaarcShareExtensionTests;
+			sourceTree = "<group>";
+		};
+		A14F9D5121E0817A0010731E /* LaarcShareExtensionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A14F9D5221E0817A0010731E /* LaarcShareExtensionUITests.swift */,
+				A14F9D5421E0817A0010731E /* Info.plist */,
+			);
+			path = LaarcShareExtensionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A14F9D2E21E081780010731E /* LaarcShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A14F9D5721E0817A0010731E /* Build configuration list for PBXNativeTarget "LaarcShareExtension" */;
+			buildPhases = (
+				A14F9D2B21E081780010731E /* Sources */,
+				A14F9D2C21E081780010731E /* Frameworks */,
+				A14F9D2D21E081780010731E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaarcShareExtension;
+			productName = LaarcShareExtension;
+			productReference = A14F9D2F21E081780010731E /* LaarcShareExtension.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A14F9D4221E0817A0010731E /* LaarcShareExtensionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A14F9D5A21E0817A0010731E /* Build configuration list for PBXNativeTarget "LaarcShareExtensionTests" */;
+			buildPhases = (
+				A14F9D3F21E0817A0010731E /* Sources */,
+				A14F9D4021E0817A0010731E /* Frameworks */,
+				A14F9D4121E0817A0010731E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A14F9D4521E0817A0010731E /* PBXTargetDependency */,
+			);
+			name = LaarcShareExtensionTests;
+			productName = LaarcShareExtensionTests;
+			productReference = A14F9D4321E0817A0010731E /* LaarcShareExtensionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A14F9D4D21E0817A0010731E /* LaarcShareExtensionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A14F9D5D21E0817A0010731E /* Build configuration list for PBXNativeTarget "LaarcShareExtensionUITests" */;
+			buildPhases = (
+				A14F9D4A21E0817A0010731E /* Sources */,
+				A14F9D4B21E0817A0010731E /* Frameworks */,
+				A14F9D4C21E0817A0010731E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A14F9D5021E0817A0010731E /* PBXTargetDependency */,
+			);
+			name = LaarcShareExtensionUITests;
+			productName = LaarcShareExtensionUITests;
+			productReference = A14F9D4E21E0817A0010731E /* LaarcShareExtensionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A14F9D2721E081780010731E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Emily Kolar";
+				TargetAttributes = {
+					A14F9D2E21E081780010731E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A14F9D4221E0817A0010731E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A14F9D2E21E081780010731E;
+					};
+					A14F9D4D21E0817A0010731E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A14F9D2E21E081780010731E;
+					};
+				};
+			};
+			buildConfigurationList = A14F9D2A21E081780010731E /* Build configuration list for PBXProject "LaarcShareExtension" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A14F9D2621E081780010731E;
+			productRefGroup = A14F9D3021E081780010731E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A14F9D2E21E081780010731E /* LaarcShareExtension */,
+				A14F9D4221E0817A0010731E /* LaarcShareExtensionTests */,
+				A14F9D4D21E0817A0010731E /* LaarcShareExtensionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A14F9D2D21E081780010731E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14F9D3D21E081790010731E /* LaunchScreen.storyboard in Resources */,
+				A14F9D3A21E081790010731E /* Assets.xcassets in Resources */,
+				A14F9D3821E081780010731E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14F9D4121E0817A0010731E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14F9D4C21E0817A0010731E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A14F9D2B21E081780010731E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14F9D3521E081780010731E /* ViewController.swift in Sources */,
+				A14F9D3321E081780010731E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14F9D3F21E0817A0010731E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14F9D4821E0817A0010731E /* LaarcShareExtensionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A14F9D4A21E0817A0010731E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14F9D5321E0817A0010731E /* LaarcShareExtensionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A14F9D4521E0817A0010731E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A14F9D2E21E081780010731E /* LaarcShareExtension */;
+			targetProxy = A14F9D4421E0817A0010731E /* PBXContainerItemProxy */;
+		};
+		A14F9D5021E0817A0010731E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A14F9D2E21E081780010731E /* LaarcShareExtension */;
+			targetProxy = A14F9D4F21E0817A0010731E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A14F9D3621E081780010731E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A14F9D3721E081780010731E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A14F9D3B21E081790010731E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A14F9D3C21E081790010731E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A14F9D5521E0817A0010731E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A14F9D5621E0817A0010731E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A14F9D5821E0817A0010731E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9452FEMTF;
+				INFOPLIST_FILE = LaarcShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilykolar.LaarcShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A14F9D5921E0817A0010731E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9452FEMTF;
+				INFOPLIST_FILE = LaarcShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilykolar.LaarcShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A14F9D5B21E0817A0010731E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9452FEMTF;
+				INFOPLIST_FILE = LaarcShareExtensionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilykolar.LaarcShareExtensionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaarcShareExtension.app/LaarcShareExtension";
+			};
+			name = Debug;
+		};
+		A14F9D5C21E0817A0010731E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9452FEMTF;
+				INFOPLIST_FILE = LaarcShareExtensionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilykolar.LaarcShareExtensionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaarcShareExtension.app/LaarcShareExtension";
+			};
+			name = Release;
+		};
+		A14F9D5E21E0817A0010731E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9452FEMTF;
+				INFOPLIST_FILE = LaarcShareExtensionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilykolar.LaarcShareExtensionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LaarcShareExtension;
+			};
+			name = Debug;
+		};
+		A14F9D5F21E0817A0010731E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B9452FEMTF;
+				INFOPLIST_FILE = LaarcShareExtensionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.emilykolar.LaarcShareExtensionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LaarcShareExtension;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A14F9D2A21E081780010731E /* Build configuration list for PBXProject "LaarcShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14F9D5521E0817A0010731E /* Debug */,
+				A14F9D5621E0817A0010731E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A14F9D5721E0817A0010731E /* Build configuration list for PBXNativeTarget "LaarcShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14F9D5821E0817A0010731E /* Debug */,
+				A14F9D5921E0817A0010731E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A14F9D5A21E0817A0010731E /* Build configuration list for PBXNativeTarget "LaarcShareExtensionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14F9D5B21E0817A0010731E /* Debug */,
+				A14F9D5C21E0817A0010731E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A14F9D5D21E0817A0010731E /* Build configuration list for PBXNativeTarget "LaarcShareExtensionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A14F9D5E21E0817A0010731E /* Debug */,
+				A14F9D5F21E0817A0010731E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A14F9D2721E081780010731E /* Project object */;
+}
