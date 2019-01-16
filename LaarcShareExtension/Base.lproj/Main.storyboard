@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,90 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LaarcShareExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laarc" translatesAutoresizingMaskIntoConstraints="NO" id="cwG-rD-2mp">
+                                <rect key="frame" x="157.5" y="61" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="y2Y-HL-Yp5"/>
+                                    <constraint firstAttribute="height" constant="60" id="z1e-g8-K6g"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zLt-iy-SxA">
+                                <rect key="frame" x="16" y="156" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" textContentType="username"/>
+                            </textField>
+                            <textField opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yl4-XE-WbC">
+                                <rect key="frame" x="16" y="202" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0P-4u-Pol">
+                                <rect key="frame" x="16" y="248" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.60392156862745094" green="0.72941176470588232" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QbR-zy-dWq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X6C-PK-ic0"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LNo-oG-wYw">
+                                <rect key="frame" x="16" y="156" width="343" height="167"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="9J5-73-4cE"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="HoU-ya-lJE">
+                                <rect key="frame" x="177.5" y="207" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zLt-iy-SxA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="84p-Ra-an4"/>
+                            <constraint firstItem="zLt-iy-SxA" firstAttribute="top" secondItem="cwG-rD-2mp" secondAttribute="bottom" constant="35" id="Vu6-8o-R15"/>
+                            <constraint firstItem="yl4-XE-WbC" firstAttribute="top" secondItem="zLt-iy-SxA" secondAttribute="bottom" constant="16" id="X6Z-b4-6gj"/>
+                            <constraint firstItem="yl4-XE-WbC" firstAttribute="width" secondItem="zLt-iy-SxA" secondAttribute="width" id="XaT-Jc-0tO"/>
+                            <constraint firstItem="cwG-rD-2mp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="YwQ-py-ndr"/>
+                            <constraint firstItem="HoU-ya-lJE" firstAttribute="top" secondItem="cwG-rD-2mp" secondAttribute="bottom" constant="86" id="aho-u3-Hf9"/>
+                            <constraint firstItem="Y0P-4u-Pol" firstAttribute="width" secondItem="yl4-XE-WbC" secondAttribute="width" id="aky-1d-Q5N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zLt-iy-SxA" secondAttribute="trailing" constant="16" id="eKe-0C-Sou"/>
+                            <constraint firstItem="HoU-ya-lJE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="erj-Yd-mww"/>
+                            <constraint firstItem="Y0P-4u-Pol" firstAttribute="top" secondItem="yl4-XE-WbC" secondAttribute="bottom" constant="16" id="g3V-fv-XgB"/>
+                            <constraint firstItem="yl4-XE-WbC" firstAttribute="centerX" secondItem="zLt-iy-SxA" secondAttribute="centerX" id="jrC-La-6gW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LNo-oG-wYw" secondAttribute="trailing" constant="16" id="jxG-gW-nfH"/>
+                            <constraint firstItem="cwG-rD-2mp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mGM-GK-VsL"/>
+                            <constraint firstItem="LNo-oG-wYw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nag-Wq-wcu"/>
+                            <constraint firstItem="Y0P-4u-Pol" firstAttribute="centerX" secondItem="yl4-XE-WbC" secondAttribute="centerX" id="ylY-PL-US8"/>
+                            <constraint firstItem="LNo-oG-wYw" firstAttribute="top" secondItem="cwG-rD-2mp" secondAttribute="bottom" constant="35" id="z77-jc-HkZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="HoU-ya-lJE" id="shd-Fp-iV5"/>
+                        <outlet property="loggedInView" destination="LNo-oG-wYw" id="4qn-KJ-Ofl"/>
+                        <outlet property="loginButton" destination="Y0P-4u-Pol" id="svb-5Y-wRH"/>
+                        <outlet property="passwordField" destination="yl4-XE-WbC" id="LaJ-x8-MZe"/>
+                        <outlet property="usernameField" destination="zLt-iy-SxA" id="2oT-MA-7Ov"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="laarc" width="40" height="40"/>
+    </resources>
 </document>
