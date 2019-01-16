@@ -17,6 +17,9 @@ class ShareViewController: SLComposeServiceViewController {
     private var _postTags = "news"
     private var _postComment = ""
     private var _postTitle = ""
+    private let _appContainer = "group.com.emilykolar.LaarcSubmitShareExtension"
+    private let _configName = "com.emilykolar.LaarcSubmitShareExtension.BackgroundSessionConfig"
+    private let _baseUrl = "https://laarc.io"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,13 +51,8 @@ class ShareViewController: SLComposeServiceViewController {
     }
 
     func styleUi() {
-//        let imageView = UIImageView(image: UIImage(named: "vurb-icon-rounded"))
-//        imageView.contentMode = .scaleAspectFit
-//        navigationItem.titleView = imageView
-//        navigationController?.navigationBar.topItem?.titleView = imageView
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.backgroundColor = LAARC_GREEN
-
     }
 
     override func isContentValid() -> Bool {
@@ -62,15 +60,29 @@ class ShareViewController: SLComposeServiceViewController {
         return true
     }
 
+    func makeSession() -> URLSession {
+        let sessionConfig = URLSessionConfiguration.background(withIdentifier: self._configName)
+        sessionConfig.sharedContainerIdentifier = self._appContainer
+        return URLSession(configuration: sessionConfig)
+    }
+
+    func makeRequest(url: URL) -> URLRequest {
+        var request = URLRequest(url: url)
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        request.httpMethod = "GET"
+        
+        return request
+    }
+
     override func didSelectPost() {
         // This is called after the user selects Post. Do the upload of contentText and/or NSExtensionContext attachments.
-//        let extensionItem = NSExtensionItem()
-//        extensionItem.attachments = [NSItemProvider(item: NSDictionary(dictionary: [
-//            "title": _postTitle,
-//            "url": _url,
-//            "text": _postComment,
-//            "tags": _postTags
-//        ]), typeIdentifier: String(kUTTypePropertyList))]
+        if let url = URL(string: "\(self._baseUrl)?url=\(self._url)") {
+            let session = makeSession()
+            let request = makeRequest(url: url)
+            let task = session.dataTask(with: request)
+            task.resume()
+        }
 
         // Inform the host that we're done, so it un-blocks its UI. Note: Alternatively you could call super's -didSelectPost, which will similarly complete the extension context.
         self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
@@ -84,12 +96,15 @@ class ShareViewController: SLComposeServiceViewController {
             tagsItem.title = "Tags"
             tagsItem.value = "news"
             tagsItem.tapHandler = {
+
             }
+
             titleItem.title = "Title"
             titleItem.value = self._postTitle
             titleItem.tapHandler = {
                 
             }
+
             urlItem.title = "Url"
             urlItem.value = self._url
             urlItem.tapHandler = {
